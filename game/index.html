@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Warung Rush — game masak warung kaki lima: terima pesanan, cincang, masak di wok, sajikan sebelum pelanggan marah.">
+<link rel="icon" href="data:,">
+<title>Warung Rush — Masak Cepat, Sajikan Hangat!</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #2b1405;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+  }
+  #wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 12px;
+  }
+  canvas {
+    display: block;
+    width: 960px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  #caption {
+    color: #ffe8c2;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-align: center;
+  }
+  #caption b { color: #ffd94d; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="600"></canvas>
+  <p id="caption"><b>Warung Rush</b> — warung kaki lima paling sibuk di kota.
+  Klik bahan (atau tekan 1-0), cincang cabai dan sayur di talenan, masak di wok,
+  angkat ke piring, lalu klik pelanggan untuk menyajikan. Spasi: sajikan piring siap.
+  P: jeda &nbsp; R: mulai ulang &nbsp; M: bisu. Tiga pelanggan marah dan warung tutup!</p>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
